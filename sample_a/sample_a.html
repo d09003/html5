@@ -8,8 +8,9 @@
 
 		body{
 			font-family:  'メイリオ',
-			'Hiagino Kaku Gothic Pro', sans-serif
-
+			'Hiagino Kaku Gothic Pro', sans-serif;
+			background-color: #e5e5e5;
+			margin:0 ;
 		}
 
 		a	{color: #017acd}
@@ -17,8 +18,15 @@
 		/* コンテナ */
 		div#container	{
 			width: 900px;
-			margin-left: auto;
-			margin-right: auto;
+			margin:0 auto;
+			background-color: #fff;
+			padding: 0 40px;
+			-webkit-box-shadow: 0 0 50px #bbb;
+			box-shadow: 0 0 50px #bbb;
+			background-image: url(circle.png), url(circle-yellow.png);
+			background-repeat:no-repeat;
+			background-position: 15px 410px, 90px 500px;
+			background-size:94px 94px, 30px 30px;
 		}
 
 		/* ヘッダー */
@@ -57,10 +65,10 @@
 			height: 30px;
 			background-color: #333;
 			border-radius: 5px;
-			background: -webkit-linear-gradient(#777 0%, #444 50%, #555 100%);
-			background: -moz-linear-gradient(#777 0%, #444 50%, #555 100%);
-			background: -ms-linear-gradient(#777 0%, #444 50%, #555 100%);
-			background: -o-marginlinear-gradient(#777 0%, #444 50%, #555 100%);
+			background: -webkit-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+			background: -moz-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+			background: -ms-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+			background: -o-marginlinear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
 		}
 
 		nav ul li	{
@@ -75,11 +83,11 @@
 			text-decoration: none;
 			text-align: center;
 			color: #ffffff;
-			border-right: solid 1px #ffffff;
+			border-right: solid 1px rgba(255,255,255,0.2);
 		}
 
 		nav ul li a:hover	{
-			background-color: #017acd;
+			background-color: rgba(1,122,205,0.3);
 		}
 
 		nav ul li:first-of-type a:hover{
@@ -99,6 +107,9 @@
 			margin: 20px 0 10px;
 			padding: 18px;
 			border-radius: 5px;
+			box-shadow: 0px 2px 3px #ccc, 0 0 4px 3px #fff inset;
+			-webkit-box-shadow: 0px 2px 3px #ccc, 0 0 4px 3px #fff inset;
+			background-color: rgba(255,255,255,0.5);
 		}
 
 		article  header h1	{
@@ -129,6 +140,9 @@
 			background:-moz-linear-gradient(#fff 0%, #dfdfdf 100%);
 			background:-ms-linear-gradient(#fff 0%, #dfdfdf 100%);
 			background:-o-linear-gradient(#fff 0%, #dfdfdf 100%);
+			box-shadow: 0px 2px 3px #ccc, 0px 0px 4px 3px #fff inset;
+			-webkit-box-shadow: 0px 2px 3px #ccc, 0px 0px 4px 3px #fff inset;
+
 		}
 
 		article section h1	{
